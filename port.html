@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fresher Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+        .back-to-top {position: fixed; bottom: 20px; right: 20px; display: none;}
+    </style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="arya%20image.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Fresher Portfolio</b></h4>
+    <p class="w3-text-grey">Welcome to my portfolio!</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>About Me</a> 
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cogs fa-fw w3-margin-right"></i>Skills</a> 
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>Projects</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="about">
+    <a href="#"><img src="path/to/your/avatar.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>About Me</b></h1>
+    <p>I'm a fresher looking to start my career in the tech industry. I'm passionate about learning new technologies and developing innovative solutions.</p>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <div class="w3-container w3-padding-32" id="skills">
+    <h4><b>Skills</b></h4>
+    <p>Here are some of my skills:</p>
+    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-padding-16">Programming languages: Java, Python, C++</li>
+      <li class="w3-padding-16">Development frameworks: Spring, Django</li>
+      <li class="w3-padding-16">Databases: MySQL, MongoDB</li>
+      <li class="w3-padding-16">Operating Systems: Windows, Linux</li>
+    </ul>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h4><b>Projects</b></h4>
+    <p>Here are some of my projects:</p>
+    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-padding-16">Project 1: To-Do List App (Java, Spring)</li>
+      <li class="w3-padding-16">Project 2: Chatbot (Python, Django)</li>
+      <li class="w3-padding-16">Project 3: Personal Website (HTML, CSS, JavaScript)</li>
+    </ul>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="w3-container w3-padding-32 w3-light-grey" id="testimonials">
+    <h4><b>Testimonials</b></h4>
+    <p>Here's what others are saying:</p>
+    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-padding-16">"Great to work with!" - John Doe</li>
+      <li class="w3-padding-16">"Very skilled and knowledgeable." - Jane Smith</li>
+    </ul>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey" id="contact">
+    <h4><b>Contact Me</b></h4>
+    <p>Get in touch with me:</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="email" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <textarea class="w3-input w3-border" name="Message" required></textarea>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+    <div class="w3-section">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://github.com/yourprofile" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button onclick="topFunction()" id="backToTopBtn" class="w3-button w3-black w3-hide-large back-to-top"><i class="fa fa-arrow-up"></i> Top</button>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+    <p>&copy; 2023 Fresher Portfolio</p>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Script to show Back to Top button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("backToTopBtn").style.display = "block";
+  } else {
+    document.getElementById("backToTopBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+  
